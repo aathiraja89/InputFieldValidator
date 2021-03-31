@@ -1,0 +1,92 @@
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+body {
+    background: #e8cbc0;
+    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+    background: linear-gradient(to right, #e8cbc0, #636fa4);
+    min-height: 100vh;
+}
+
+.bootstrap-select .bs-ok-default::after {
+    width: 0.3em;
+    height: 0.6em;
+    border-width: 0 0.1em 0.1em 0;
+    transform: rotate(45deg) translateY(0.5rem);
+}
+
+.btn.dropdown-toggle:focus {
+    outline: none !important;
+}
+
+.dropdown-menu {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ 
+.dropdown-menu a {
+   overflow: hidden;
+   outline: none;
+}
+ 
+.bss-input
+{
+   border:0;
+   margin:-3px;
+   padding:3px;
+   outline: none;
+   color: #000;
+   width: 99%;
+}
+ 
+.bss-input:hover
+{
+   background-color: orange;
+}
+ 
+.additem .check-mark
+{
+   opacity: 0;
+   z-index: -1000;
+}
+ 
+.addnewicon {
+   position: relative;
+   padding: 4px;
+   margin: -8px;
+   padding-right: 50px;
+   margin-right: -50px;
+   color: #aaa;
+}
+ 
+.addnewicon:hover {
+   color: #222;
+}
+
+.dropdown-menu .show {
+   max-width : 100%;
+   min-width : 100%;
+   width : 100%;
+   border-radius: 2rem;
+}
+
+.form-rounded {
+border-radius: 2rem;
+}
+
+
+
+.inputFields {
+  padding-top: 10px;
+  display: flex;
+  /*padding-left : 15px;
+    padding-right : 10px;*/
+}

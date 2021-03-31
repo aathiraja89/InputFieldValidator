@@ -1,0 +1,90 @@
+<html>
+   <head>
+      <!-- <script src="jquery-1.7.1.min.js"></script> -->
+      <script src="popup/jquery-3.3.1.slim.min.js"></script>
+      <script src="popup.js"></script>
+      <!-- <script src="script.js"></script> -->
+      <script src="jspdf.min.js"></script>   
+      <script src="popup/bootstrap-select.min.js"></script>
+      <script src="popup/bootstrap.bundle.min.js"></script>         
+      <link rel="stylesheet" href="popup/popup.css">
+      <link rel="stylesheet" href="popup/bootstrap-select.min.css">
+      <link rel="stylesheet" href="popup/font-awesome.min.css">
+      <link rel="stylesheet" href="popup/bootstrap.min.css">
+      <style>
+         .myBtn { display: block; bottom: 50px; right: 30px; z-index: 99; font-size: 14px; border: none; outline: none; background-color: darkorange; color: white; cursor: pointer; border-radius: 4px; 
+         text-align: center;
+         padding: 10px;
+         width: 100px;
+         transition: all 0.5s;
+         margin: 5px;
+         } .myBtn:hover { background-color: #555; }
+         .myBtn span {
+         cursor: pointer;
+         display: inline-block;
+         position: relative;
+         transition: 0.5s;
+         }
+         .myBtn span:after {
+         content: '\00bb';
+         position: absolute;
+         opacity: 0;
+         top: 0;
+         right: -20px;
+         transition: 0.5s;
+         }
+         .myBtn:hover span {
+         padding-right: 25px;
+         }
+         .myBtn:hover span:after {
+         opacity: 1;
+         right: 0;
+         }
+         .dropdown-menu{
+         width: 100%;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container py-5">
+      <div class="row text-center text-white mb-5 py-4">
+         <div class="col-lg-9 mx-auto">
+            <h1 class="display-10">Field Validator</h1>
+            <p class="lead">Every <code>&lt;input&gt;</code> elements in the active tab will be validated against the values in the dropdown below </p>
+            <p class="lead">** navigate only when all elements in the page are validated</p>
+         </div>
+      </div>
+      <br><br>
+      <div class="row">
+         <div class="col-lg-6 mx-auto">
+            <!-- <label class="text-white mb-3 lead">Where do you live?</label> -->
+            <!-- Multiselect dropdown -->
+            <select multiple data-actions-box="true" data-style="bg-white rounded-pill px-4 py-3 shadow-sm " name="values" class="selectpicker w-100" data-live-search="true" required="required">
+               <option>0.1223</option>
+               <option>1000</option>
+               <option>lorem ipsum</option>
+               <option>#$%@%$*</option>
+               <option>00001111</option>
+            </select>
+            <!-- End -->
+            <button type="button" id="defaultValuesBtn" class="btn btn-link float-right text-white font-italic">Default values</button>
+         </div>
+
+         <div class="col-lg-6 mx-auto">
+            <form name="validatorForm" class="well form-horizontal" action=" " method="post" id="contact_form" validate>
+               <div class='inputFields w-100'>
+                  <input name="addValues" type="text" id="addRow" class="form-control form-rounded col-lg-4" data-style="bg-white rounded-pill px-4 py-3 shadow-sm "/>
+                  <input type="submit" id="btn" value="Add" class="form-control form-rounded w-50" />
+               </div>
+            </form>
+         </div>
+         <div class="col-lg-6 mx-auto">
+            <div class="inputFields w-100">
+               <input type="button" id="start" value="Start" class="form-control form-rounded w-50" disabled>
+               <input type="button" id="stop" value="Stop" class="form-control form-rounded w-50" disabled>
+               <!-- <input type="button" id="report" value="Report" class="form-control form-rounded w-50"></div> -->
+            </div>
+         </div>
+      </div>`
+   </body>
+</html>
